@@ -44,4 +44,12 @@
         name="out"
         beam="stagek2ttmpupil"
 
-
+[[nodes]]
+    name="ttmpupil"
+    [[nodes.inputs]]
+        name="in"
+        beam="stagek2ttmpupil"
+        outputLinks=["out"]
+    [[nodes.outputs]]
+        name="out"
+        beam="ttmpupil2flipacq"
